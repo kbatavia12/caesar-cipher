@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    
+}
+
+.header {
+    font-family: 'Ceviche One', cursive;
+    position: absolute;
+    top:0;
+    left: 0;
+    // color: white;
+    font-size: 72px;
+    background: linear-gradient(315deg, #bf033b 0%, #ffc719 74%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.encoded {
+    background: linear-gradient(315deg, #bf033b 0%, #ffc719 74%);
+}
+
+.decoded {
+    background: linear-gradient(315deg, #05e8ba 0%, #087ee1 74%);    
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+
+    &__input-container {
+        width: 100%;
+        height: 50vh;
+        display: grid;
+        place-items: center;
+        display: flex;
+        justify-content: center;
+    
+        &-text {
+            width: 60%;
+            height: 60px;
+            border-bottom-color: red;
+            border-top-color: yellow;
+            border-right-color: yellow;
+            border-left-color: red;
+            border-width: 5px;
+            font-size: 40px;
+        }
+
+        &-number {
+            width: 4%;
+            height: 60px;
+            border-bottom-color: red;
+            border-top-color: yellow;
+            border-right-color: yellow;
+            border-left-color: red;
+            border-width: 5px;
+            margin: 0 2%;
+            font-size: 40px;
+        }
+        
+        
+        &-submit {
+            width: 10%;
+            height: 70px;
+            margin: 0 2%;
+            font-size: 40px;
+            background: linear-gradient(315deg, #bf033b 0%, #ffc719 74%);
+            border-radius: 5px;
+            font-family: 'Ceviche One', cursive;
+            transition: font-size background 1s ease-in-out;
+            &:hover {
+                background: linear-gradient(0deg, #bf033b 0%, #ffc719 74%);
+            }
+
+            &:active span {
+                font-size: 60px;
+
+            }
+
+
+            &:active {
+                transform: translateY(4px);
+                
+            }
+        }
+    }
+
+    &__output-container {
+        width: 100%;
+        height: 50vh;
+        display: grid;
+        place-items: center;
+        display: flex;
+        justify-content: center;
+        // background: blue;
+        padding: 2%;
+
+        box-sizing: border-box;
+
+        &-text {
+            color: white;
+            font-size: 3em;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Ubuntu Mono', monospace;
+            word-break: break-all;
+        }
+    }
+
+}
+
+
